@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1{
+            text-align: center;
+            color:white;
+            background-color:salmon;
+        }
+
+        body{
+            background-image: url("https://images.pexels.com/photos/774455/pexels-photo-774455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-position: center;    
+            background-size: cover;        
+        }
+
+        p{
+            text-align: center;
+            color:white;
+        }
+
+        .text-center{
+            text-align: center;
+            color:white;
+        }
+
+       
+    </style>
+
+
+    <title>Wine Quality Analysis</title>
+        <h1> Wine Quality Analysis</h1>
+        <form action="/predict" method="POST">
+            <fieldset>
+        
+                <p>Alcohol
+                    <input type="text" name="alcohol" placeholder="Enter value between 0 and 15"size=30 required>
+                </p>
+                <p>Sulphates
+                    <input type="text" name="sulphates" placeholder="Enter value between 0.00 and 2.00" size=30 required>
+                </p>
+                <p>Total Sulphur Dioxide
+                    <input type="text" name="total sulphur dioxide" placeholder="Enter value between 0 and 300" size=30 required>
+                </p>
+                <p>Chlorides
+                    <input type="text" name="chlorides" placeholder="Enter value between 0.000 and 1.000" size=30  required>
+                </p>
+                <p>Citric Acid
+                    <input type="text" name="citric acid" placeholder="Enter value between 0.00 and 1.00"size=30  required>
+                </p>
+                <p>Volatile Acidity
+                    <input type="text" name="volatile acidity" placeholder="Enter value between 0.00 and 2.00" size=30 required>
+                </p>
+                <div class="text-center">
+                    <input type="submit" name="submit-btn">
+                </div>
+            </fieldset>
+        </form>        
+
+</head>
+<body>
+    
+</body>
+</html>

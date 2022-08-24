@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+            color:white;
+        }
+
+        body{
+            background-image: url("https://images.pexels.com/photos/774455/pexels-photo-774455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover; 
+            
+        }
+
+        p{
+            text-align: center;
+            border-style: groove;
+            font-size: 60px;
+        }
+
+        .text-center{
+            text-align: center;
+            color:white;
+        }
+
+       
+    </style>
+
+    <title>Prediction</title>
+    <body>
+        <h1 id="header">Prediction</h1>
+        <p id="predict">{{prediction}}</p>
+        <script type="text/javascript">
+            f_color()
+            function f_color(){
+                if(document.getElementById('predict').innerHTML == 'Good Quality Wine!'){
+                    document.getElementById('predict').style.color = "Green"
+                    document.getElementById('header').style.backgroundColor = "seagreen"
+                }
+                else if (document.getElementById('predict').innerHTML == 'Bad Quality Wine!'){
+                    document.getElementById('predict').style.color = "Red"
+                    document.getElementById('header').style.backgroundColor = "Brown"
+                }
+            }
+        </script>
+    </body>
+</head>
+<body>
+    
+</body>
+</html>
